@@ -10,7 +10,7 @@
          text-align: center;
          color: blue;
      }
-    section > div{
+     section > div{
         text-align: center;
     }
     body > div{
@@ -19,16 +19,37 @@
     body > ul {
         text-align: center;
     }
-   
+   body li{
+       list-style: none;
+   }
+   li:hover{
+       background-color: blue;
+       color: white;
+       font-size: 25px;
+   }
+   section.auth div{
+       margin-bottom: 10px;
+   }
+   body{
+       font-family: Arial, Helvetica, sans-serif;
+       background-color: white;
+   }
+   #tete{
+       background-image: url("logo.jpeg");
+       background-size: 100px 100px;
+       background-repeat: no-repeat;
+       background-position: top left;
+   }
     
  </style>  
 </head>
 
 <body>
-    <img src="logo.jpeg" alt="" width="200" length="200">
-    <h1>I NEED :</h1>
-    <h2>Moderation Interface</h2>
-    
+    <div id="tete">
+        
+        <h1>I NEED :</h1>
+        <h2>Moderation Interface</h2>
+    </div>
     <div>
         You can authentify yourself here if you are in one of the following cases :
     </div>
@@ -37,7 +58,7 @@
         <li>An association</li>
         <li>A benevolant</li>
     </ul>
-    <section>
+    <section class="auth">
         <div>Sign in</div>
         <div>
             Email :
